@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-
+const options = { weekday: 'long' };
 
 const MeteoSemaine = () => {
   const [forecastData, setForecastData] = useState(null);
@@ -25,41 +25,29 @@ const MeteoSemaine = () => {
   
 return (
     <div className='container'>
-        {forecastData ? (
-                    forecastData.daily.temperature_2m_max.map((temp, index) => (
-                        <div className='card' key={index}>
-                            <p>​🔥​ {temp}°C</p>
-                            <p>
-                                ❄️ {' '}
-                                {forecastData.daily.temperature_2m_min[index]}°C
-                            </p>
-                            <p>
-                                ☀️ {' '}
-                                {new Date(
-                                    forecastData.daily.sunrise[index]
-                                ).toLocaleTimeString()}
-                            </p>
-                            <p>
-                                🌜 {' '}
-                                {new Date(
-                                    forecastData.daily.sunset[index]
-                                ).toLocaleTimeString()}
-                            </p>
-                            <p>
-                                💨 {' '}
-                                {forecastData.daily.windspeed_10m_max[index]} m/s
-                            </p>
-                            <p className='date'>📅{' '}
-                            {forecastData.daily.time[index]}
-                            </p>
-                        </div>
-                    ))
-        ) : (
-            <p>Chargement des données météorologiques...</p>
-        )}
+      {forecastData ? (
+        forecastData.daily.temperature_2m_max
+          .filter((temp, index) => index !== 0)
+          .map((temp, index) => (
+            <div className='card' key={index}>
+              <p className='date'>{new Date (forecastData.daily.time[index + 1]).toLocaleDateString()}</p>
+              <p>📅{' '}{new Date (forecastData.daily.time[index + 1]).toLocaleDateString('fr-FR', options)}</p>
+              <p>​🔥​{' '}{forecastData.daily.temperature_2m_max[index + 1]}°C</p>
+              <p>❄️ {' '}{forecastData.daily.temperature_2m_min[index + 1]}°C</p>
+              <p>☀️ {' '}{new Date(forecastData.daily.sunrise[index + 1]).toLocaleTimeString()}</p>
+              <p>🌜 {' '}{new Date(forecastData.daily.sunset[index + 1]).toLocaleTimeString()}</p>
+            </div>
+          ))
+      ) : (
+        <p>Chargement des données météorologiques...</p>
+      )}
     </div>
-);
+  );
 }
 
+export default MeteoSemaine;
 
-export default MeteoSemaine
+
+/** 
+ * 
+ */

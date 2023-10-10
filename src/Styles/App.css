@@ -8,8 +8,8 @@
     width: 50vh;
     margin-top: 20vh;
     margin-bottom: 10vh;
-    background-color: lightgray;
-    border: solid 5px black;
+    background-color: #DBE2EF;
+    border: solid 5px #112D4E;
     border-radius: 25px;
     font-size: 3vh;
     display: flex;
@@ -22,8 +22,8 @@
     width: 30vh;
     margin-bottom: 10vh;
     padding: 2vh;
-    background-color: lightgray;
-    border: solid 5px black;
+    background-color: #DBE2EF;
+    border: solid 5px #112D4E;
     border-radius: 25px;
     font-size: 3vh;
     display: flex;
@@ -42,7 +42,7 @@
 h2 {
     text-align: center;
     font-size: 10vh;
-    text-shadow: 5px 10px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
 }
 
 .legende {
@@ -53,11 +53,17 @@ h2 {
     margin-bottom: 10vh;
     margin-top: 10vh;
     padding: 2vh;
-    background-color: lightgray;
-    border: solid 5px black;
+    background-color: #DBE2EF;
+    border: solid 5px #112D4E;
     border-radius: 25px;
     font-size: 3vh;
     align-items: center;
     box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.date {
+    width: 100%;
+    text-align: center;
+    font-size: 4vh;
 
 }

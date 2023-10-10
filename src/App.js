@@ -10,9 +10,9 @@ import LegendeCards from "./components/Legende";
 function App() {
   return <div className="tableau">
     <h2>Prévisions météo pour Roubaix</h2>
+    <LegendeCards/>
     <FetchApi/>
     <MeteoSemaine/>
-    <LegendeCards/>
   </div>
 }
 
