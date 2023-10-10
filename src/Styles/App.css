@@ -1,0 +1,28 @@
+.tableau {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+}
+
+.cardJour {
+    border: solid 3px black;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-bottom: 10vh;
+    padding: 2vh;
+}
+
+.card {
+    border: solid 3px black;
+    margin: 1vh;
+    padding: 2vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    text-align: center;
+}
