@@ -29,17 +29,22 @@ return (
     <div>
     {forecastData ? (
         <div className='cardJour'>
-            <p>Température maximale: {forecastData.daily.temperature_2m_max[0]}°C</p>
-            <p>Température minimale: {forecastData.daily.temperature_2m_min[0]}°C</p>
+            <p>​🔥​ {forecastData.daily.temperature_2m_max[0]}°C</p>
+            <p>❄️ {forecastData.daily.temperature_2m_min[0]}°C</p>
             <p>
-                Lever du soleil:{' '}
+                ☀️{' '}
                 {new Date(forecastData.daily.sunrise[0]).toLocaleTimeString()}
             </p>
             <p>
-                Coucher du soleil:{' '}
+                🌜{' '}
                 {new Date(forecastData.daily.sunset[0]).toLocaleTimeString()}
             </p>
-            <p>Vitesse maximale du vent: {forecastData.daily.windspeed_10m_max[0]} m/s</p>
+            <p>
+                💨 {forecastData.daily.windspeed_10m_max[0]} m/s
+            </p>
+            <p>📅{' '}
+                {forecastData.daily.time[0]}
+                </p>
         </div>
     ) : (
         <p>Chargement des données météorologiques...</p>

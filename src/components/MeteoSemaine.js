@@ -29,30 +29,30 @@ return (
                 <div className='container'>
                     {forecastData.daily.temperature_2m_max.map((temp, index) => (
                         <div className='card' key={index}>
-                            <p>Température maximale: {temp}°C</p>
+                            <p>​🔥​ {temp}°C</p>
                             <p>
-                                Température minimale:{' '}
+                                ❄️ {' '}
                                 {forecastData.daily.temperature_2m_min[index]}°C
                             </p>
                             <p>
-                                Lever du soleil:{' '}
+                                ☀️ {' '}
                                 {new Date(
                                     forecastData.daily.sunrise[index]
                                 ).toLocaleTimeString()}
                             </p>
                             <p>
-                                Coucher du soleil:{' '}
+                                🌜 {' '}
                                 {new Date(
                                     forecastData.daily.sunset[index]
                                 ).toLocaleTimeString()}
                             </p>
                             <p>
-                                Vitesse maximale du vent:{' '}
+                                💨 {' '}
                                 {forecastData.daily.windspeed_10m_max[index]} m/s
                             </p>
-                            <h3>Date :{' '}
+                            <p>📅{' '}
                             {forecastData.daily.time[index]}
-                            </h3>
+                            </p>
                         </div>
                     ))}
                 </div>

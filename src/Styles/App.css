@@ -1,28 +1,44 @@
 .tableau {
     display: flex;
     flex-direction: column;
-    padding: 5vh;
 }
 
 .cardJour {
-    border: solid 3px black;
     margin-right: 40%;
     margin-left: 40%;
     margin-bottom: 10vh;
-    padding: 2vh;
+    padding: 3vh;
+    background-color: lightgray;
+    border: solid 5px black;
+    border-radius: 25px;
+    font-size: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card {
-    border: solid 3px black;
     margin: 1vh;
     padding: 2vh;
+    background-color: lightgray;
+    border: solid 5px black;
+    border-radius: 25px;
+    font-size: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .container {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
 h2 {
     text-align: center;
+    font-size: 10vh;
+    text-shadow: 5px 10px 3px rgba(0, 0, 0, 0.5);
 }
