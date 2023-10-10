@@ -26,9 +26,9 @@ const GetMeteo = () => {
 
   return (
     <div>
-     <h1>Données météo actuelles " Berlin Par défault":</h1>
+     <h2>Données météo actuelles :</h2>
       <p>Date : {weatherData.daily.time[0]}</p>
-      <p>Lieu : Longitude : {weatherData.longitude[0]} | Latitude {weatherData.latitude[0]}</p>
+      <p>Lieu : Longitude : {weatherData.longitude} | Latitude {weatherData.latitude}</p>
       <p>Pluie : {weatherData.hourly.rain[0]}</p>
       <p>Temperature : Min : {weatherData.daily.temperature_2m_min[0]}{weatherData.daily_units.temperature_2m_min}| Max :  {weatherData.daily.temperature_2m_max[0]}{weatherData.daily_units.temperature_2m_max}</p>
       <p>Vent : {weatherData.daily.windspeed_10m_max[0]}{weatherData.daily_units.windspeed_10m_max}</p>

@@ -21,14 +21,13 @@ import axios from 'axios'
       // Créez des éléments JSX pour chaque jour de la semaine
    weatherData.daily.time.slice(1).map((time, i) => (
     <div key={i}>
-      <h1>Données météo du : {time} :</h1>
-      <p>Date : {time}</p>
-    
+      <h2>Données météo du {time} :</h2>
       <p>Pluie : {weatherData.daily.precipitation_sum[i + 1]}</p>
-      <p>Température : Min : {time.temperature_2m_min}{weatherData.daily_units.temperature_2m_min} | Max : {time.temperature_2m_max}{weatherData.daily_units.temperature_2m_max}</p>
-      <p>Vent : {time.windspeed_10m_max}{weatherData.daily_units.windspeed_10m_max}</p>
-      <p>Lever du Soleil : {time.sunrise}</p>
-      <p>Coucher du Soleil : {time.sunset}</p>
+      <p>Température : Min : {weatherData.daily.temperature_2m_min[i + 1]}{weatherData.daily_units.temperature_2m_min} | 
+                        Max : {weatherData.daily.temperature_2m_max[i +1]}{weatherData.daily_units.temperature_2m_max}</p>
+      <p>Vent : {weatherData.daily.windspeed_10m_max[i + 1]}{weatherData.daily_units.windspeed_10m_max}</p>
+      <p>Lever du Soleil : {weatherData.daily.sunrise[i + 1]}</p>
+      <p>Coucher du Soleil : {weatherData.daily.sunset[i + 1]}</p>
     </div>
   ))
   );
