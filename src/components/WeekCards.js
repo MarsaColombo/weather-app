@@ -3,10 +3,10 @@ import GetMeteoWeek from "./GetMeteoWeek";
 
 const WeekCards = () => {
   return (
-    <div className="w-full border-2 border-black">
+    <div className="w-screen ">
       <div
         id="weeklyContainer"
-        className="flex justify-around items-center content-center p-6 "
+        className="h-screen grid grid-cols-2 grid-rows-3 p-6 bg-gray-500 gap-4 "
       >
         <GetMeteoWeek />
       </div>

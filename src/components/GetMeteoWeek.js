@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import sun from "./ui/sun.png";
 import wind from "./ui/wind.png";
+import calendar from "./ui/calendar.png";
+import temperature from "./ui/temperature.png";
 import axios from "axios";
 const GetMeteoWeek = () => {
   const [weatherData, setWeatherData] = useState(null);
@@ -34,11 +36,13 @@ const GetMeteoWeek = () => {
       //   // </div>
       // ))
       <div key={i}>
-        <div className="jour h-full  rounded-xl shadow-xl p-4 flex flex-col items-center justify-center">
-          <h1> {time} </h1>
-          <p>01/12</p>
+        <div className="jour row-span-1 col-span-1 rounded-xl shadow-2xl p-4 flex flex-col items-start justify-center bg-gray-200">
+          <div className="flex justify-center items-center gap-2">
+            <img src={calendar} alt="" className="h-6 w-6 "></img>
+            <h1> {time} </h1>
+          </div>
 
-          <div className="flex justify-around items-center ">
+          <div className="flex justify-around items-center gap-2 ">
             <img src={sun} alt="" className="h-6 w-6 "></img>
             <p>
               {" "}
@@ -47,17 +51,20 @@ const GetMeteoWeek = () => {
             </p>
           </div>
 
-          <div className="flex justify-around items-center ">
+          <div className="flex justify-around items-center gap-2 ">
             <img src={wind} alt="" className="h-6 w-6 "></img>
             <p>{weatherData.daily.precipitation_sum[i + 1]}</p>
           </div>
-          <span>
-            {" "}
-            {weatherData.daily.temperature_2m_min[i + 1]}
-            {weatherData.daily_units.temperature_2m_min}/{" "}
-            {weatherData.daily.temperature_2m_max[i + 1]}
-            {weatherData.daily_units.temperature_2m_max}{" "}
-          </span>
+          <div className="flex justify-around items-center gap-2 ">
+            <img src={temperature} alt="" className="h-6 w-6 "></img>
+            <span>
+              {" "}
+              {weatherData.daily.temperature_2m_min[i + 1]}
+              {weatherData.daily_units.temperature_2m_min}/{" "}
+              {weatherData.daily.temperature_2m_max[i + 1]}
+              {weatherData.daily_units.temperature_2m_max}{" "}
+            </span>
+          </div>
         </div>
       </div>
     ))
