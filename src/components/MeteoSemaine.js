@@ -24,10 +24,9 @@ const MeteoSemaine = () => {
 
   
 return (
-    <div>
+    <div className='container'>
         {forecastData ? (
-                <div className='container'>
-                    {forecastData.daily.temperature_2m_max.map((temp, index) => (
+                    forecastData.daily.temperature_2m_max.map((temp, index) => (
                         <div className='card' key={index}>
                             <p>​🔥​ {temp}°C</p>
                             <p>
@@ -50,12 +49,11 @@ return (
                                 💨 {' '}
                                 {forecastData.daily.windspeed_10m_max[index]} m/s
                             </p>
-                            <p>📅{' '}
+                            <p className='date'>📅{' '}
                             {forecastData.daily.time[index]}
                             </p>
                         </div>
-                    ))}
-                </div>
+                    ))
         ) : (
             <p>Chargement des données météorologiques...</p>
         )}

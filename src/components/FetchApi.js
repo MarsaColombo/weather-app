@@ -29,6 +29,8 @@ return (
     <div>
     {forecastData ? (
         <div className='cardJour'>
+            <p className='date'>📅{' '}
+                {forecastData.daily.time[0]}</p>
             <p>​🔥​ {forecastData.daily.temperature_2m_max[0]}°C</p>
             <p>❄️ {forecastData.daily.temperature_2m_min[0]}°C</p>
             <p>
@@ -42,9 +44,6 @@ return (
             <p>
                 💨 {forecastData.daily.windspeed_10m_max[0]} m/s
             </p>
-            <p>📅{' '}
-                {forecastData.daily.time[0]}
-                </p>
         </div>
     ) : (
         <p>Chargement des données météorologiques...</p>

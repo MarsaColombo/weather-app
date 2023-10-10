@@ -3,6 +3,7 @@ import FetchApi from "./components/FetchApi";
 import MeteoSemaine from "./components/MeteoSemaine";
 import './Styles/App.css'
 import './Styles/index.css'
+import LegendeCards from "./components/Legende";
 
 
 
@@ -11,6 +12,7 @@ function App() {
     <h2>Prévisions météo pour Roubaix</h2>
     <FetchApi/>
     <MeteoSemaine/>
+    <LegendeCards/>
   </div>
 }
 
