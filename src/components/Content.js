@@ -1,34 +1,43 @@
 import React from "react";
-import sunLogo from "./soleil.png";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+import nuage from "./ui/Nuageux.jpg";
+import Input from "./Input";
 
 const Content = () => {
   return (
-    <div>
+    <div
+      style={{
+        backgroundImage: `url(${nuage})`,
+        backgroundSize: "cover", // Pour adapter l'image à la taille du conteneur
+        backgroundRepeat: "no-repeat", // Pour éviter la répétition de l'image
+        backgroundPosition: "center", // Pour centrer l'image horizontalement et verticalement
+      }}
+      className="mx-8 my-6 h-96"
+    >
+      <Input className="h-1/6" />
       {/* Carte Principale */}
-      <div className="h-auto w-auto m-8 flex justify-center items-center ">
-        <Card className="h-1/6 w-2/6">
-          <CardMedia
-            component="img"
-            alt="Logo Soleil"
-            className="h-[6rem] w-auto"
-            image={sunLogo}
-          />
-          <CardContent className=" flex flex-col justify-center items-center">
-            <Typography variant="h6" component="div">
-              Berlin
-            </Typography>
-            <Typography>30&#xB0;</Typography>
-          </CardContent>
-        </Card>
+      <div className=" h-4/6 flex justify-center items-center  fit-content">
+        <div
+          id="dayForecastContainer "
+          className="h-full w-full flex justify-between items-center m-4 "
+        >
+          <div
+            id="firstInfoForecast"
+            className="flex flex-col justify-around items-start leading-8 h-full"
+          >
+            <h1 className="font-semibold text-2xl">Paris</h1>
+            <h3 className="font-light text-lg">Soleil</h3>
+            <h2 className="font-light text-lg">Samedi 23 Octobre 2021</h2>
+          </div>
+          <div
+            id="secondForecastContainer"
+            className=" h-full flex flex-col justify-around items-end"
+          >
+            <p className="font-light text-lg">20&#xB0;</p>
+            <span className="font-light text-lg"> 18&#xB0; / 23&#xB0; </span>
+          </div>
+        </div>
       </div>
       {/* carte content */}
-      
     </div>
   );
 };

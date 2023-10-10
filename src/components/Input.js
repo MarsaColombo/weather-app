@@ -2,11 +2,11 @@
 import React from "react";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
-
 const top100Films = [{ label: "Monty Python and the Holy Grail", year: 1975 }];
+
 const Input = () => {
   return (
-    <div className=" w-full flex justify-around items-center p-6">
+    <div className=" w-full flex justify-around items-center p-6 ">
       <Autocomplete
         clearOnEscape
         options={top100Films}

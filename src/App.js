@@ -1,13 +1,16 @@
 import "./App.css";
-import Input from "./components/Input";
+import WeekCards from "./components/WeekCards";
+
 import Content from "./components/Content";
 
 // import axios from 'axios';
 function App() {
   return (
-    <div className=" w-screen ">
-      <Input />
-      <Content />
+    <div className=" w-full h-full ">
+      <div className="w-full h-full">
+        <Content />
+        <WeekCards />
+      </div>
     </div>
   );
 }
