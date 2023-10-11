@@ -3,6 +3,7 @@ import sun from "./ui/sun.png";
 import wind from "./ui/wind.png";
 import calendar from "./ui/calendar.png";
 import temperature from "./ui/temperature.png";
+import raining from "./ui/raining.png";
 import axios from "axios";
 const GetMeteoWeek = () => {
   const [weatherData, setWeatherData] = useState(null);
@@ -64,6 +65,10 @@ const GetMeteoWeek = () => {
               {weatherData.daily.temperature_2m_max[i + 1]}
               {weatherData.daily_units.temperature_2m_max}{" "}
             </span>
+          </div>
+          <div className="flex justify-between gap-2">
+            <img src={raining} alt="" className="h-6 w-6 "></img>
+            <h3 className="font-light text-lg">{weatherData.hourly.rain[0]}</h3>
           </div>
         </div>
       </div>

@@ -2,3 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .scroll-container {
+    @apply snap-y snap-mandatory overflow-y-scroll h-[100vh];
+  }
+}
+@layer components {
+  .section-scroll {
+    @apply snap-start;
+  }
+}
