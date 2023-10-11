@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/MarsaColombo.github.io/weather-app/static/css/main.1c796119.css",
-    "main.js": "/MarsaColombo.github.io/weather-app/static/js/main.ea46d519.js",
-    "static/js/787.d9312eb8.chunk.js": "/MarsaColombo.github.io/weather-app/static/js/787.d9312eb8.chunk.js",
-    "static/media/SnowyBG.jpeg": "/MarsaColombo.github.io/weather-app/static/media/SnowyBG.be96e5f18f069d22b7b4.jpeg",
-    "static/media/raining.png": "/MarsaColombo.github.io/weather-app/static/media/raining.6b8175e7eaaee032f30c.png",
-    "static/media/sunrise.png": "/MarsaColombo.github.io/weather-app/static/media/sunrise.123e48a5f327849eb24e.png",
-    "static/media/temperature.png": "/MarsaColombo.github.io/weather-app/static/media/temperature.3dd626b14ad555a1b3b8.png",
-    "static/media/sunset.png": "/MarsaColombo.github.io/weather-app/static/media/sunset.ca9b9c65e1683f4aebfd.png",
-    "static/media/sun.png": "/MarsaColombo.github.io/weather-app/static/media/sun.6d48da504f4816188c8d.png",
-    "static/media/wind.png": "/MarsaColombo.github.io/weather-app/static/media/wind.aac7fbb2f12ebe041948.png",
-    "index.html": "/MarsaColombo.github.io/weather-app/index.html",
-    "main.1c796119.css.map": "/MarsaColombo.github.io/weather-app/static/css/main.1c796119.css.map",
-    "main.ea46d519.js.map": "/MarsaColombo.github.io/weather-app/static/js/main.ea46d519.js.map",
-    "787.d9312eb8.chunk.js.map": "/MarsaColombo.github.io/weather-app/static/js/787.d9312eb8.chunk.js.map"
+    "main.css": "/weather-app/static/css/main.1c796119.css",
+    "main.js": "/weather-app/static/js/main.2e6734e6.js",
+    "static/js/787.d9312eb8.chunk.js": "/weather-app/static/js/787.d9312eb8.chunk.js",
+    "static/media/SnowyBG.jpeg": "/weather-app/static/media/SnowyBG.be96e5f18f069d22b7b4.jpeg",
+    "static/media/raining.png": "/weather-app/static/media/raining.6b8175e7eaaee032f30c.png",
+    "static/media/sunrise.png": "/weather-app/static/media/sunrise.123e48a5f327849eb24e.png",
+    "static/media/temperature.png": "/weather-app/static/media/temperature.3dd626b14ad555a1b3b8.png",
+    "static/media/sunset.png": "/weather-app/static/media/sunset.ca9b9c65e1683f4aebfd.png",
+    "static/media/sun.png": "/weather-app/static/media/sun.6d48da504f4816188c8d.png",
+    "static/media/wind.png": "/weather-app/static/media/wind.aac7fbb2f12ebe041948.png",
+    "index.html": "/weather-app/index.html",
+    "main.1c796119.css.map": "/weather-app/static/css/main.1c796119.css.map",
+    "main.2e6734e6.js.map": "/weather-app/static/js/main.2e6734e6.js.map",
+    "787.d9312eb8.chunk.js.map": "/weather-app/static/js/787.d9312eb8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c796119.css",
-    "static/js/main.ea46d519.js"
+    "static/js/main.2e6734e6.js"
   ]
 }
