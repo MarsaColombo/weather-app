@@ -33,8 +33,8 @@ const GetMeteoWeek2 = () => {
   if (!weatherData) {
     return <div>Chargement en cours...</div>;
   }
-  console.log('weatherData:', weatherData);
-  console.log('weatherData.daily.time:', weatherData.daily.time);
+  // console.log('weatherData:', weatherData);
+  // console.log('weatherData.daily.time:', weatherData.daily.time);
   
   return (
     weatherData.daily.time.slice(1).map((time, i) => (
@@ -42,7 +42,7 @@ const GetMeteoWeek2 = () => {
         <div key={i} className='container2'>
           <div>
           <div>
-          <h3> {dayOfWeek[i]}</h3>
+          <h3> {dayOfWeek[i + 1]}</h3>
           <p>☔ {weatherData.daily.precipitation_sum[i + 1]}</p>
           <p>🌡️ Min : {weatherData.daily.temperature_2m_min[i + 1]}{weatherData.daily_units.temperature_2m_min} | 
                             Max : {weatherData.daily.temperature_2m_max[i +1]}{weatherData.daily_units.temperature_2m_max}</p>

@@ -25,6 +25,7 @@ const GetMeteo2 = () => {
         if (response.data.daily && response.data.daily.time[0]) {
           const formattedDate = formatDate(response.data.daily.time[0]);
           setDayOfWeek(formattedDate);
+          
         }
       })
       .catch(error => {
