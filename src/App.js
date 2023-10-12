@@ -1,14 +1,18 @@
 import React from 'react';
 import './App.css';
-import GetMeteo from './components/GetMeteo';
-import GetMeteoWeek from './components/GetMeteoWeek';
+import GetMeteo2 from './components/GetMeteo2';
+import GetMeteoWeek2 from './components/GetMeteoWeek2';
 
 
 function App() {
   return (
   <>
-  <GetMeteo/>
-  <GetMeteoWeek/>
+  <div className='GetMeteo'>
+  <GetMeteo2/>
+  </div>
+  <div className='GetMeteoWeek'>
+  <GetMeteoWeek2/>
+  </div>
   </>
   )
 }
